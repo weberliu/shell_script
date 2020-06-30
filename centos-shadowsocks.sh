@@ -16,11 +16,11 @@ mkdir -p $install_home
 yum update -y
 
 yum -y install epel-release
-yum install -y git gcc gcc-c++ make
-pip3 install --upgrade pip
-pip3 install setuptools
-pip3 install shadowsocks
-# pip3 install git+https://github.com/shadowsocks/shadowsocks.git@master
+yum install -y python-pip git gcc gcc-c++ make
+pip install --upgrade pip
+pip install setuptools
+# pip install shadowsocks
+pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 cd $install_home
 
