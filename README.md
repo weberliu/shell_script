@@ -33,5 +33,5 @@ curl "https://raw.githubusercontent.com/junbaor/shell_script/master/redis-cluste
 #### centos
 shadowsocks 加密方式 chacha20-ietf-poly1305
 ```
-curl "https://raw.githubusercontent.com/junbaor/shell_script/master/centos-shadowsocks.sh" | /bin/sh
+curl "https://raw.githubusercontent.com/weberliu/shell_script/master/centos-shadowsocks.sh" | /bin/sh
 ```
