@@ -17,10 +17,10 @@ yum update -y
 
 yum -y install epel-release
 yum install -y python-pip git gcc gcc-c++ make
-pip install --upgrade pip
-pip install setuptools
-# pip install shadowsocks
-pip install git+https://github.com/shadowsocks/shadowsocks.git@master
+pip3 install --upgrade pip
+pip3 install setuptools
+pip3 install shadowsocks
+# pip3 install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 cd $install_home
 
@@ -33,9 +33,9 @@ cat > $install_home/config.json <<EOF
 }
 EOF
 
-wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz
-tar zxvf libsodium-1.0.15.tar.gz
-cd libsodium-1.0.15
+wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.18.tar.gz
+tar zxvf libsodium-1.0.18.tar.gz
+cd libsodium-1.0.18
 ./configure
 make && make install 
 
