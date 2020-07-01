@@ -20,7 +20,7 @@ yum install -y python-pip git gcc gcc-c++ make
 pip install --upgrade pip
 pip install setuptools
 # pip install shadowsocks
-pip install git+https://github.com/shadowsocks/shadowsocks.git@master
+pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
 
 cd $install_home
 
